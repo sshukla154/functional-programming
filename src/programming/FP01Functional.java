@@ -19,10 +19,18 @@ public class FP01Functional {
 		System.out.println("Non-Static method reference---");
 		//Method reference for non-static method
 		numbers.stream().forEach(number -> print(number));
+		
 		System.out.println();
+		
 		System.out.println("Static method reference---");
 		//Method reference for static method
 		numbers.stream().forEach(FP01Functional::print);
+		
+		System.out.println();
+		
+		System.out.println("Static method reference---");
+		//Method reference for static method
+		numbers.stream().forEach(System.out::println);
 	}
 
 }
