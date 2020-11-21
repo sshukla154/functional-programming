@@ -26,7 +26,7 @@ public class FP02Functional {
 		distinctSortedListFunctional(numbers);
 
 		System.out.println("Double the list (Collectors Example): ");
-		doubleList(numbers);
+		squareList(numbers);
 
 		List<String> courses = List.of("API", "Spring", "Spring Boot", "Java", "API", "MicroServices", "AWS", "PCF",
 				"Azure", "Docker", "Java", "Kubernetes");
@@ -91,6 +91,10 @@ public class FP02Functional {
 				.forEach(System.out::println);
 	}
 
+	private static void squareList(List<Integer> numbers) {
+		System.out.println(numbers.stream().map(number -> number * number).collect(Collectors.toList()));
+	}
+
 	private static void distinctStringListFunctional(List<String> courses) {
 		courses.stream().distinct().forEach(System.out::println);
 		System.out.println();
@@ -118,9 +122,5 @@ public class FP02Functional {
 
 	private static void distinctSortedByLengthOfStringListFunctional(List<String> courses) {
 		courses.stream().distinct().sorted(Comparator.comparing(x -> x.length())).forEach(System.out::println);
-	}
-
-	private static void doubleList(List<Integer> numbers) {
-		System.out.println(numbers.stream().map(number -> number * number).collect(Collectors.toList()));
 	}
 }
