@@ -1,11 +1,9 @@
 package programming.exercise;
 
-import java.util.Comparator;
 import java.util.List;
 import java.util.function.BinaryOperator;
-import java.util.stream.Collectors;
 
-public class FP02Exercises12 {
+public class FP03Exercises12 {
 
 	public static void main(String[] args) {
 
