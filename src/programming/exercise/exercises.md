@@ -26,3 +26,14 @@ Cube every number in a list and fins the sum of cubes
 # Exercise 9
 Find sum of odd numbers in a list
 
+# Exercise 10
+Create a list with even Numbers filtered from Numbers List
+
+# Exercise 11
+Create a List with lengths of all course titles
+
+# Exercise 12
+Find Functional Interface behind the scene the second argument of reduce method.
+Create an implementation for the functional interface 
+> int sum = numbers.stream().reduce(0, Integer::sum);
+
