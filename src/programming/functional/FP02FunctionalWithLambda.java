@@ -2,7 +2,7 @@ package programming.functional;
 
 import java.util.List;
 
-public class FP02Functional {
+public class FP02FunctionalWithLambda {
 
 	public static void main(String[] args) {
 
@@ -11,14 +11,10 @@ public class FP02Functional {
 
 	}
 
-	private static int sum(int aggregate, int nextNumber) {
-		System.out.println(aggregate + ", " + nextNumber);
-		return aggregate + nextNumber;
-	}
-
 	private static int addListFunctional(List<Integer> numbers) {
 		return numbers.stream()// Stream
-				.reduce(0, FP02Functional::sum);// reduce the list from 0 to last value using sum() into single value
+				.reduce(0, (aggregate, nextNumber) -> aggregate + nextNumber);// reduce the list from 0 to last value
+																				// using sum() into single value
 	}
 
 }
