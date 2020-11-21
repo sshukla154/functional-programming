@@ -8,9 +8,9 @@ public class FP01Functional {
 
 		List<Integer> numbers = List.of(10, 20, 54, 123, 87, 31, 01, 10, 65, 23);
 		printAllNumbersinListFunctional(numbers);
-		
+
 	}
-	
+
 	private static void print(Integer number) {
 		System.out.println(number);
 	}
@@ -35,8 +35,12 @@ public class FP01Functional {
 		numbers.stream().forEach(System.out::println);
 	}
 
+	/*
+	 * 1. Converting number into stream 2. Applying method reference over each
+	 * number of stream
+	 */
 	private static void printAllNumbersinListFunctional(List<Integer> numbers) {
-		numbers.stream()
+		numbers.stream()// Stream
 				.forEach(System.out::println);// Method Reference
 	}
 
