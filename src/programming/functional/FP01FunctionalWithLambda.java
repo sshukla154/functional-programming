@@ -1,6 +1,6 @@
 package programming.functional;
 
-import com.sun.tools.javac.util.List;
+import java.util.List;
 
 public class FP01FunctionalWithLambda {
 
