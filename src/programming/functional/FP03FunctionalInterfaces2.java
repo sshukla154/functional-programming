@@ -25,7 +25,8 @@ public class FP03FunctionalInterfaces2 {
 	public static void main(String[] args) {
 
 		List<Integer> numbers = List.of(10, 20, 54, 123, 87, 31, 01, 10, 65, 23);
-
+		numbers.stream().forEach(number -> System.out.print(number + " "));
+		System.out.println();
 		/*
 		 * Predicate<T> - Represents a predicate (boolean-valued function) of one
 		 * argument.

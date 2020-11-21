@@ -25,6 +25,7 @@ public class FP03MethodReferences {
 
 		// Method references as Constructor reference
 		Supplier<String> supplier = String::new;
+		System.out.println(supplier);
 
 	}
 
