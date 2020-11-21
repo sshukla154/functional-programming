@@ -1,4 +1,4 @@
-package programming;
+package programming.exercise;
 
 import java.util.List;
 

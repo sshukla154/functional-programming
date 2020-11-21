@@ -1,4 +1,4 @@
-package programming;
+package programming.structural;
 
 import com.sun.tools.javac.util.List;
 
