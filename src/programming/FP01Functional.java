@@ -8,10 +8,9 @@ public class FP01Functional {
 
 		List<Integer> numbers = List.of(10, 20, 54, 123, 87, 31, 01, 10, 65, 23);
 		printAllNumbersinListFunctional(numbers);
-		System.out.println("===");
-		printAllEvenNumbersinListFunctional(numbers);
+		
 	}
-
+	
 	private static void print(Integer number) {
 		System.out.println(number);
 	}
@@ -39,16 +38,6 @@ public class FP01Functional {
 	private static void printAllNumbersinListFunctional(List<Integer> numbers) {
 		numbers.stream()
 				.forEach(System.out::println);// Method Reference
-	}
-
-	private static boolean isEven(Integer number) {
-		return (number % 2 == 0);
-	}
-
-	private static void printAllEvenNumbersinListFunctional(List<Integer> numbers) {
-		numbers.stream()
-				.filter(FP01Functional::isEven)// Filter - Only allow even numbers
-				.forEach(System.out::println);// Method reference
 	}
 
 }
