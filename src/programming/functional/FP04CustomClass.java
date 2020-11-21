@@ -2,7 +2,7 @@ package programming.functional;
 
 import java.util.function.Predicate;
 
-import com.sun.tools.javac.util.List;
+import java.util.List;
 
 public class FP04CustomClass {
 
