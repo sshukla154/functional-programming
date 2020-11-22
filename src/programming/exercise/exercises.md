@@ -37,6 +37,9 @@ Find Functional Interface behind the scene the second argument of reduce method.
 Create an implementation for the functional interface 
 > int sum = numbers.stream().reduce(0, Integer::sum);
 
-# Exercise 12
+# Exercise 13
 Do Behavior Parameterization for the mapping logic.
 List squaredNumbers = numbers.stream() .map(x -> x*x) .collect(Collectors.toList());
+
+# Exercise 14
+Print first 10 even numbers using peek()

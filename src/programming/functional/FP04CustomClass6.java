@@ -2,8 +2,6 @@ package programming.functional;
 
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class FP04CustomClass6 {
